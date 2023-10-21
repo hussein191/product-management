@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.4px;
+}
+body{
+    background-color: #fff;
+}
+/* Warning page */
+
+.min{
+    position: absolute;
+    z-index: 9999;
+    background: rgba(0,0,0,0.7);
+    width:100%;
+    display:none;
+    justify-content: center;
+    align-items: center;
+    height:100%
+}
+.box_warin{
+    width:40%;
+    padding:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 10px;
+    background-color: #fff;
+    border-radius:5px;
+}
+.box_warin h2{
+    font-size:21px;
+    font-weight: 550;
+    color:#6f6f6f
+}
+.box_warin i{
+    font-size:80px;
+    color:rgba(223, 67, 67,0.7)
+}
+.warin{
+    width:130px;
+    height: 35px;
+    border:none;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 17px;
+    transition: 0.3s ease;
+}
+.warin:hover{
+    color:#fff;
+    background-color: rgba(0, 128, 0,0.7);
+}
+/* Home page */
+.titel{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+.titel h2{
+    font-size: 35px;
+    color:#1d1d1d;
+    font-weight: 600;
+}
+.formes{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap:10px;
+    margin-top: 20px;
+}
+form{
+    width:80%;
+    display: flex;
+    row-gap: 10px;
+    flex-direction: column;
+}
+form .titel_Product,form .count,form .category,form .search{
+    width:100%;
+    height:40px;
+    border:1px solid rgba(102, 102, 102,0.2);
+    border-radius:4px;
+    outline:none;
+    padding:7px;
+    color:#1d1d1d;
+    font-size: 15px;
+    transition: 0.3s ease;
+}
+form .titel_Product:hover,form .count:hover,form .category:hover,form .search:hover{
+    border:1px solid rgba(29, 29, 29,0.5)
+}
+.prices{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    column-gap: 4px;
+}
+.prices input {
+    width:25%;
+    height:35px;
+    border:1px solid rgba(102, 102, 102,0.2);
+    border-radius:4px;
+    outline:none;
+    padding:7px;
+    color:#1d1d1d;
+    font-size: 15px;
+    transition: 0.3s ease;
+}
+.prices input:hover{
+    border:1px solid rgba(29, 29, 29,0.5)
+}
+
+.Create{
+    width:100%;
+    height:35px;
+    border:none;
+    border-radius:4px;
+    cursor: pointer;
+    outline: none;
+    font-size: 18px;
+    font-weight: 300;
+    transition: 0.3s ease;
+}
+.Create:hover{
+    background-color:rgba(0, 0, 255,0.5);
+    color:#fff;
+}
+.Search_productes{
+    width:80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.Search_productes button{
+    width:47%;
+    height:35px;
+    border:none;
+    border-radius:4px;
+    cursor: pointer;
+    outline: none;
+    font-size: 18px;
+    font-weight: 300;
+    transition: 0.3s ease;
+}
+.Search_productes button:hover{
+    background-color:rgba(0, 0, 255,0.5);
+    color:#fff;
+}
+.Delet_All{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.Delet_All button{
+    width:80%;
+    height:35px;
+    border:none;
+    border-radius:4px;
+    cursor: pointer;
+    outline: none;
+    font-size: 18px;
+    font-weight: 300;
+    transition: 0.3s ease;
+}
+.Delet_All button:hover{
+    background-color:rgba(0, 0, 255,0.5);
+    color:#fff;
+}
+.All_Productes{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.titels_prodectes{
+    width:90%;
+    display: flex;
+    border-top:1px solid rgba(102, 102, 102,0.2);
+    border-bottom:1px solid rgba(102, 102, 102,0.2);
+    padding-top:5px;
+    padding-bottom: 5px;
+    margin-bottom: 7px;
+}
+.titels_prodectes div{
+    width:30%;
+    padding-left: 4px;
+    border-right: 1px solid rgba(102, 102, 102,0.2);
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    color:#6f6f6f
+}
+.titels_prodectes div:nth-child(1){
+    justify-content: flex-start;
+}
+.masseg{
+    width:90%;
+    display:none;
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+    font-size:21px;
+    font-weight: 350;
+    color:#6f6f6f
+}
+.Addmasseg{
+    display:flex;
+}
+.All_info{
+    width:90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.info_date{
+    width:100%;
+    border-bottom: 1px solid rgba(102, 102, 102,0.2);
+}
+
+.dates div{
+    width:30%;
+    border-right: 1px solid rgba(102, 102, 102,0.2);
+    display: flex;
+    padding:4px;
+    padding-top:7px;
+    font-size: 16px;
+    justify-content: center;
+}
+.dates div:nth-child(1){
+    justify-content: flex-start;
+}
+
+.dates{
+    width:100%;
+    display: flex;
+}
+.Updete,.Delete{
+    width:100px;
+    height:40px;
+    cursor: pointer;
+    border:none;
+    border-radius:4px;
+    outline: none;
+    transition: 0.3s ease;
+    font-size:16px;
+}
+.Updete:hover , .Delete:hover{
+    background-color: rgba(0, 0, 255,0.5);
+    color:#fff
+}
+
+/* responsive pages */
+@media(max-width:900px){
+    .All_Productes{
+        width:100%;
+        padding:5px;
+        justify-content: center;
+    }
+    .titels_prodectes,.All_info{
+        width:100%
+    }
+    .titels_prodectes div,.All_info div{
+        font-size: 10px;
+    }
+    .Updete,.Delete{
+        width:70px;
+        font-size: 14px;
+    }
+
+}
+@media(max-width:850px){
+    form,.Search_productes,.Create,.Delet_All button{
+        width:90%
+    }
+}
+@media(max-width:500px){
+    
+    .prices,.Search_productes{
+        flex-direction: column;
+        row-gap: 7px;
+    }
+    .prices input,.Search_productes button {
+        width:100%
+    }
+}
+@media(max-width:414px){
+    .Updete,.Delete{
+        width:40px;
+        font-size: 8px;
+        font-weight: 300;
+    }
+    .titels_prodectes div{
+        font-size: 7px;
+    }
+}

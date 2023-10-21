@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ecoshop</title>
+        <!--Google Font-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        <!--Stylesheet-->
+        <script src="https://kit.fontawesome.com/d6f4927337.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="home.css">
+    </head>
+    <body>
+        <!--Warning page-->
+        <div class="min">
+            <div class="box_warin">
+                <h2>Please enter your data first...</h2>
+                <i class="uil uil-exclamation-triangle"></i>
+                <button class="warin">OK!</button>
+            </div>
+        </div>
+        <!--Home page-->
+        <div class="titel">
+            <h2>Create Date</h2>
+        </div>
+        <div class="formes">
+            <form action="">
+                <input class="titel_Product" type="text" placeholder="title">
+                <div class="prices">
+                    <input class="price" type="number" placeholder="price">
+                    <input class="taxes" type="number" placeholder="taxes">
+                    <input class="ads" type="number" placeholder="ads">
+                    <input class="discount" type="number" placeholder="discount">
+                </div>
+                <input class="count" type="number" placeholder="count">
+                <input class="category" type="text" placeholder="category">
+            </form>
+            <form>
+                <button class="Create">Create</button>
+            </form>
+            <form action="">
+                <input class="search" type="search" placeholder="search">
+            </form>
+            <div class="Search_productes">
+                <button class="Search_titel">Search by Title</button>
+                <button class="Search_calegory">Search by Calegory</button>
+            </div>
+        </div>
+        <div class="Delet_All">
+            <button class="DeletAll">DeletAll(<span class="CounterProductes"> 0 </span>)</button>
+        </div>
+        <div class="All_Productes">
+            <div class="titels_prodectes">
+                <div>ID</div>
+                <div>Title</div>
+                <div>Price</div>
+                <div>Taxes</div>
+                <div>Ads</div>
+                <div>Discount</div>
+                <div>Total</div>
+                <div>Count</div>
+                <div>Category</div>
+                <div>Update</div>
+                <div>Delete</div>
+            </div>
+            <div class="masseg">This product does not exist</div>
+            <div class="All_info"></div>
+        </div>
+        <script src="home.js"></script>
+    </body>
+</html>
